@@ -1,0 +1,23 @@
+
+Currently the package contains these components:
+
+	o) Insteon PLC device drivers for the Linux Kernel v2.6 and 3.x.
+
+Installation instructions are provided in the INSTALL file.
+
+The cm15a driver is heavily (about 95% code reuse) based upon the
+device driver for the Labjack & LegoUSB tower.  The LegoUSB tower, the
+Labjack U12, and several other devices (CM19A) all use Interrupt
+endpoints (both In and Out) to communicate over the USB bus.  The
+device driver simply maps the two endpoints to the read() and write()
+system calls.
+
+Tested with success on sheevaplug (plug computer based on SoC arm).
+
+The programs in this package are distributed under GPL.  A copy of the
+license can be found in the COPYING file.
+ 
+For comments/questions/suggestions use the forums where suitable,
+otherwise e-mail colundrum@gmail.com. Based on package provided by
+Neil Cherry, ncherry@comcast.net. Original package and
+documentation provided by Eric Sorton, erics@cfl.rr.com.

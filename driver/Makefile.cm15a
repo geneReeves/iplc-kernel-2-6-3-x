@@ -1,0 +1,14 @@
+#
+# Makefile for iplc
+#
+#
+
+CDEFS = -DINSTEON
+
+KDIR := /lib/modules/$(shell uname -r)/build 
+
+obj-m := cm15a.o
+
+default:
+	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) modules
+

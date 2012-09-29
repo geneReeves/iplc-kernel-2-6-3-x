@@ -1,0 +1,62 @@
+IPLC or CM19A Linux Installation
+
+For 2.6 and 3.0 kernel users
+--------------------
+Go to the driver directory. To build the device driver, execute
+ make in the driver directory as root:
+
+	% make
+
+The device module, labjack.ko, should be built.  Once the device driver 
+is built, you can use insmod to load the device.  As root, execute:
+
+	# insmod iplc.ko
+
+You should see a message on the console (use dmesg to view the messages if
+ you are in X).
+
+If /dev/usb/iplc0 is not created automatically, then you must create 
+the device node with the following command executed as root:
+
+	# mkdir /dev/usb
+	# mknod --mode=a=rw /dev/usb/iplc0 c 180 240
+
+(NOTE: you only need to make the device node once.)
+
+I've not needed the do the following under Linux 2.6 (Gentoo) though I
+don't have the hid module loaded.
+
+HID NOTE: If the hid module is loaded (use lsmod to view the modules and 
+look for "hid"), the provided labjack driver will not work correctly.  
+Since the Labjack is classified as a HID device, the hid driver will claim 
+the device.  However, the hid driver does not support the "Interrupt" out 
+endpoint used by the Labjack and thus cannot communicate with the Labjack.  
+You must remove the hid driver prior to loading the labjack driver.  The 
+following command, as root, should suffice:
+
+	# modprobe -r hid
+
+If you absolutely must have the hid device driver loaded, it is possible to
+add the Labjack to the HID blacklist.  Add the Labjack USB vendor (0x0cd5) 
+and product (0x0001) IDs to the hid_blacklist structure in hid-core.c in 
+the drivers/usb/input directory.  An example of the line to insert in the 
+hid_blacklist structure would be:
+
+For plinc:
+(0x10bf, 0x0001, HID_QUIRK_IGNORE}
+
+For iplc:
+(0x10bf, 0x0004, HID_QUIRK_IGNORE}
+
+For the CM15A:
+(0xbc7, 0x0001, HID_QUIRK_IGNORE}
+
+For the CM19A:
+(0x0bc7, 0x0002, HID_QUIRK_IGNORE}
+
+For the Labjack U12:
+(0x0cd5, 0x0002, HID_QUIRK_IGNORE}
+
+For the changes to take effect, a kernel rebuild is necessary.
+ 
+Good Luck.

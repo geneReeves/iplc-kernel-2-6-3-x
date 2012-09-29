@@ -1,0 +1,105 @@
+<html><body>
+
+<LINK REL="STYLESHEET" HREF="/default.css" TYPE="text/css">
+<table width=100% bgcolor='9999CC'>
+<td><center>
+<font size=3 color="black"><b>
+Control Items
+</b></font></center>
+</td>
+</table><br>
+
+<table width='100%' border='0'>
+<center>
+ <table cellSpacing=4 cellPadding=0 width='100%' border=0>
+
+  <td align='left'   width='12%'></td>
+  <td align='right'  width='13%'><a href='/bin/button_action.pl?$O&$Backup_Lights&on'><img src='/bin/button.pl?$Backup_Lights&item&off' alt='Backup Lights off' ISMAP border=0></a></td>
+  <td align='middle' width='20%'><a href='SET;&html_state_log($Backup_Lights)'><img src='/graphics/log.gif' alt='log' border=0></a></td>
+
+  <td align='left'   width='12%'></td>
+  <td align='right'  width='13%'><a href='/bin/button_action.pl?$O&$Front_Porch&on'><img src='/bin/button.pl?$Front_Porch&item&off' alt='Front Porch off' ISMAP border=0></a></td>
+  <td align='middle' width='20%'><a href='SET;&html_state_log($Front_Porch)'><img src='/graphics/log.gif' alt='log' border=0></a></td>
+</tr><tr>
+
+  <td align='left'   width='12%'></td>
+  <td align='right'  width='13%'><a href='/bin/button_action.pl?$O&$Holiday_Lights&on'><img src='/bin/button.pl?$Holiday_Lights&item&off' alt='Holiday Lights off' ISMAP border=0></a></td>
+  <td align='middle' width='20%'><a href='SET;&html_state_log($Holiday_Lights)'><img src='/graphics/log.gif' alt='log' border=0></a></td>
+
+  <td align='left'   width='12%'></td>
+  <td align='right'  width='13%'><a href='/bin/button_action.pl?$O&$xO1&on'><img src='/bin/button.pl?$xO1&item&off' alt='XO1 off' ISMAP border=0></a></td>
+  <td align='middle' width='20%'><a href='SET;&html_state_log($xO1)'><img src='/graphics/log.gif' alt='log' border=0></a></td>
+</tr><tr>
+
+  <td align='left'   width='12%'></td>
+  <td align='right'  width='13%'><a href='/bin/button_action.pl?$O&$xO2&on'><img src='/bin/button.pl?$xO2&item&off' alt='XO2 off' ISMAP border=0></a></td>
+  <td align='middle' width='20%'><a href='SET;&html_state_log($xO2)'><img src='/graphics/log.gif' alt='log' border=0></a></td>
+
+  <td align='left'   width='12%'></td>
+  <td align='right'  width='13%'><a href='/bin/button_action.pl?$O&$xO3&on'><img src='/bin/button.pl?$xO3&item&off' alt='XO3 off' ISMAP border=0></a></td>
+  <td align='middle' width='20%'><a href='SET;&html_state_log($xO3)'><img src='/graphics/log.gif' alt='log' border=0></a></td>
+</tr><tr>
+
+  <td align='left'   width='12%'></td>
+  <td align='right'  width='13%'><a href='/bin/button_action.pl?$O&$xO4&on'><img src='/bin/button.pl?$xO4&item&off' alt='XO4 off' ISMAP border=0></a></td>
+  <td align='middle' width='20%'><a href='SET;&html_state_log($xO4)'><img src='/graphics/log.gif' alt='log' border=0></a></td>
+
+  <td align='left'   width='12%'></td>
+  <td align='right'  width='13%'><a href='/bin/button_action.pl?$O&$xO5&on'><img src='/bin/button.pl?$xO5&item&off' alt='XO5 off' ISMAP border=0></a></td>
+  <td align='middle' width='20%'><a href='SET;&html_state_log($xO5)'><img src='/graphics/log.gif' alt='log' border=0></a></td>
+</tr><tr>
+
+  <td align='left'   width='12%'></td>
+  <td align='right'  width='13%'><a href='/bin/button_action.pl?$O&$xO6&on'><img src='/bin/button.pl?$xO6&item&off' alt='XO6 off' ISMAP border=0></a></td>
+  <td align='middle' width='20%'><a href='SET;&html_state_log($xO6)'><img src='/graphics/log.gif' alt='log' border=0></a></td>
+
+  <td align='left'   width='12%'></td>
+  <td align='right'  width='13%'><a href='/bin/button_action.pl?$O&$xO7&on'><img src='/bin/button.pl?$xO7&item&off' alt='XO7 off' ISMAP border=0></a></td>
+  <td align='middle' width='20%'><a href='SET;&html_state_log($xO7)'><img src='/graphics/log.gif' alt='log' border=0></a></td>
+</tr><tr>
+
+  <td align='left'   width='12%'></td>
+  <td align='right'  width='13%'><a href='/bin/button_action.pl?$O&$xO8&on'><img src='/bin/button.pl?$xO8&item&off' alt='XO8 off' ISMAP border=0></a></td>
+  <td align='middle' width='20%'><a href='SET;&html_state_log($xO8)'><img src='/graphics/log.gif' alt='log' border=0></a></td>
+
+  <td align='left'   width='12%'></td>
+  <td align='right'  width='13%'><a href='/bin/button_action.pl?$O&$xO9&on'><img src='/bin/button.pl?$xO9&item&off' alt='XO9 off' ISMAP border=0></a></td>
+  <td align='middle' width='20%'><a href='SET;&html_state_log($xO9)'><img src='/graphics/log.gif' alt='log' border=0></a></td>
+</tr><tr>
+
+  <td align='left'   width='12%'></td>
+  <td align='right'  width='13%'><a href='/bin/button_action.pl?$O&$xOA&on'><img src='/bin/button.pl?$xOA&item&off' alt='XOA off' ISMAP border=0></a></td>
+  <td align='middle' width='20%'><a href='SET;&html_state_log($xOA)'><img src='/graphics/log.gif' alt='log' border=0></a></td>
+
+  <td align='left'   width='12%'></td>
+  <td align='right'  width='13%'><a href='/bin/button_action.pl?$O&$xOB&on'><img src='/bin/button.pl?$xOB&item&off' alt='XOB off' ISMAP border=0></a></td>
+  <td align='middle' width='20%'><a href='SET;&html_state_log($xOB)'><img src='/graphics/log.gif' alt='log' border=0></a></td>
+</tr><tr>
+
+  <td align='left'   width='12%'></td>
+  <td align='right'  width='13%'><a href='/bin/button_action.pl?$O&$xOC&on'><img src='/bin/button.pl?$xOC&item&off' alt='XOC off' ISMAP border=0></a></td>
+  <td align='middle' width='20%'><a href='SET;&html_state_log($xOC)'><img src='/graphics/log.gif' alt='log' border=0></a></td>
+
+  <td align='left'   width='12%'></td>
+  <td align='right'  width='13%'><a href='/bin/button_action.pl?$O&$xOD&on'><img src='/bin/button.pl?$xOD&item&off' alt='XOD off' ISMAP border=0></a></td>
+  <td align='middle' width='20%'><a href='SET;&html_state_log($xOD)'><img src='/graphics/log.gif' alt='log' border=0></a></td>
+</tr><tr>
+
+  <td align='left'   width='12%'></td>
+  <td align='right'  width='13%'><a href='/bin/button_action.pl?$O&$xOE&on'><img src='/bin/button.pl?$xOE&item&off' alt='XOE off' ISMAP border=0></a></td>
+  <td align='middle' width='20%'><a href='SET;&html_state_log($xOE)'><img src='/graphics/log.gif' alt='log' border=0></a></td>
+
+  <td align='left'   width='12%'></td>
+  <td align='right'  width='13%'><a href='/bin/button_action.pl?$O&$xOF&on'><img src='/bin/button.pl?$xOF&item&off' alt='XOF off' ISMAP border=0></a></td>
+  <td align='middle' width='20%'><a href='SET;&html_state_log($xOF)'><img src='/graphics/log.gif' alt='log' border=0></a></td>
+</tr><tr>
+
+  <td align='left'   width='12%'></td>
+  <td align='right'  width='13%'><a href='/bin/button_action.pl?$O&$xOG&on'><img src='/bin/button.pl?$xOG&item&off' alt='XOG off' ISMAP border=0></a></td>
+  <td align='middle' width='20%'><a href='SET;&html_state_log($xOG)'><img src='/graphics/log.gif' alt='log' border=0></a></td>
+
+</table>
+</center>
+</table>
+</body>
+</html>
